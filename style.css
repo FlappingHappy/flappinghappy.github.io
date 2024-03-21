@@ -27,11 +27,11 @@ img {
    	height: auto;		
 }
 
-.TwitXIcon {
+.TwitXIcon {	
 	position: absolute;
-	right: 5px;
+	right: 55px;
 	bottom: 20px;
-   	height: 5vh;		
+	height: 5vh;	
 }
 .TwitXIcon img {
 	width: 30%;
@@ -40,9 +40,9 @@ img {
 
 .InstaIcon {
 	position: absolute;
-	right: 55px;
+	right: 5px;
 	bottom: 20px;
-	height: 5vh;	
+   	height: 5vh;	
 }
 .InstaIcon img {
 	width: 30%;
