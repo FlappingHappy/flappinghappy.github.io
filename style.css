@@ -18,12 +18,12 @@ img {
 }
 .FacebookIcon {
 	position: absolute;
-	right: 0px;
+	right: 100px;
 	bottom: 0px;
    	height: 10vh;	
 }
 .FacebookIcon img {
-	width: 100%;
+	width: 50%;
    	height: auto;		
 }
 
@@ -34,17 +34,17 @@ img {
    	height: 10vh;		
 }
 .TwitXIcon img {
-	width: 100%;
+	width: 50%;
    	height: auto;		
 }
 
 .InstaIcon {
 	position: absolute;
-	right: 100px;
+	right: 0px;
 	bottom: 0px;
 	height: 10vh;	
 }
 .InstaIcon img {
-	width: 100%;
+	width: 50%;
    	height: auto;		
 }
