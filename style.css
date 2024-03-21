@@ -20,7 +20,7 @@ img {
 	position: absolute;
 	right: 0px;
 	bottom: 0px;
-   	height: 25vh;	
+   	height: 10vh;	
 }
 .FacebookIcon img {
 	width: 100%;
@@ -29,9 +29,9 @@ img {
 
 .TwitXIcon {
 	position: absolute;
-	right: 10px;
+	right: 50px;
 	bottom: 0px;
-   	height: 25vh;		
+   	height: 10vh;		
 }
 .TwitXIcon img {
 	width: 100%;
@@ -40,9 +40,9 @@ img {
 
 .InstaIcon {
 	position: absolute;
-	right: 20px;
+	right: 100px;
 	bottom: 0px;
-	height: 25vh;	
+	height: 10vh;	
 }
 .InstaIcon img {
 	width: 100%;
