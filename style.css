@@ -12,22 +12,45 @@ body {
    	font-family: sans-serif;
     	background-color: #080E12;	
 }
-img {
+.img {
 	width: 100%;
    	height: auto;		
+}
+.FacebookIcon{
+   	height: 25vh;
+    	display: flex;
+    	justify-content: center;	
 }
 .FacebookIcon img {
 	position: absolute;
-	right: 10px;
-	bottom: 10px;
+	right: 0px;
+	bottom: 0px;
 	width: 100%;
    	height: auto;		
+}
+
+.TwitXIcon {
+   	height: 25vh;
+    	display: flex;
+    	justify-content: center;		
 }
 .TwitXIcon img {
+	position: absolute;
+	right: 10px;
+	bottom: 0px;
 	width: 100%;
    	height: auto;		
 }
+
+.InstaIcon {
+	height: 25vh;
+    	display: flex;
+    	justify-content: center;	
+}
 .InstaIcon img {
+	position: absolute;
+	right: 20px;
+	bottom: 0px;
 	width: 100%;
    	height: auto;		
 }
