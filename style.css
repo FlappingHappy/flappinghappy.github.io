@@ -18,33 +18,33 @@ img {
 }
 .FacebookIcon {
 	position: absolute;
-	right: 100px;
+	right: 300px;
 	bottom: 0px;
-   	height: 10vh;	
+   	height: 5vh;	
 }
 .FacebookIcon img {
-	width: 50%;
+	width: 10%;
    	height: auto;		
 }
 
 .TwitXIcon {
 	position: absolute;
-	right: 50px;
+	right: 0px;
 	bottom: 0px;
-   	height: 10vh;		
+   	height: 5vh;		
 }
 .TwitXIcon img {
-	width: 50%;
+	width: 10%;
    	height: auto;		
 }
 
 .InstaIcon {
 	position: absolute;
-	right: 0px;
+	right: 150px;
 	bottom: 0px;
-	height: 10vh;	
+	height: 5vh;	
 }
 .InstaIcon img {
-	width: 50%;
+	width: 100%;
    	height: auto;		
 }
