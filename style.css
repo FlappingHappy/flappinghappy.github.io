@@ -13,8 +13,10 @@ body {
     	background-color: #080E12;	
 }
 .Logo img {
+	justify-content: center;
+	align-items: center;
 	width: 100%;
-   	height: auto;		
+   	height: 75vh;		
 }
 .FaceBookIcon img {
 	position: absolute;
