@@ -18,8 +18,8 @@ img {
 }
 .FaceBookIcon img {
 	position: absolute;
-	right: 0px;
-	bottom: 0px;
+	right: 10px;
+	bottom: 10px;
 	width: 100%;
    	height: auto;		
 }
@@ -28,7 +28,6 @@ img {
    	height: auto;		
 }
 .InstaIcon img {
-	
 	width: 100%;
    	height: auto;		
 }
