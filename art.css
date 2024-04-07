@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+   	font-family: sans-serif;
+    background-color: #080E12;	
+	width: 95%;
+}
+
+div.Logo {
+	background-color: #080E12;	
+	position: -webkit-sticky; /* Safari */
+  	position: sticky;
+  	top: 0;
+}
+.Logo img {
+	width: 25%;
+   	height: auto;		
+}
+.Buttons img{
+	width: 10%;
+   	height: auto;	
+}
+#Buttons{
+	display:inline;
+}
+
+.Artwork img{
+	width: 45%;
+   	height: auto;	
+}
+
+.FacebookIcon {
+	position: fixed;
+	right: 105px;
+	bottom: 20px;
+   	height: 5vh;	
+}
+.FacebookIcon img {
+	width: 30%;
+   	height: auto;		
+}
+
+.TwitXIcon {	
+	position: fixed;
+	right: 55px;
+	bottom: 20px;
+	height: 5vh;	
+}
+.TwitXIcon img {
+	width: 30%;
+   	height: auto;		
+}
+
+.InstaIcon {
+	position: fixed;
+	right: 5px;
+	bottom: 20px;
+   	height: 5vh;	
+}
+.InstaIcon img {
+	width: 30%;
+   	height: auto;		
+}
