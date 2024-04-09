@@ -5,6 +5,10 @@ body {
     background-color: #080E12;	
 	width: 95%;
 }
+h1{
+	font-size: 2vw;
+	text-align: left;
+}
 
 div.Logo {
 	background-color: #080E12;	
