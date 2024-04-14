@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>Flapping Happy contact</title>
 <link rel="stylesheet" href="./art.css">
+<link rel="icon" type="image/png" href="./Favicon.png">
 </head>
 <body style="color: white;">
 	
@@ -15,11 +16,12 @@
 				<a href="https://www.flappinghappy.com/shop"><img src="Shop.png" onmouseover="this.src='ShopOver.png'" onmouseout="this.src='Shop.png'" alt="Shop"></a>
 		</div>
 	</div>
-
+	
 	<br>
-	Please fill out the following information and I will get back with you.
-	<br>
-		<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdDhtizle99x5DLjzQ0QwbdHIv5NaXMGUEhURCWlKopHq5hHA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+		<div id="topText" class="topText">Please fill out the following information and I will get back with you.</div>
+		<br>
+	<div id="contactForm" class="contactForm">
+		<form name="gform" id="gform" class="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdDhtizle99x5DLjzQ0QwbdHIv5NaXMGUEhURCWlKopHq5hHA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
  		<br>
 		Email:<br>
   		<input type="text" name="entry.1562853756" id="entry.1562853756"><br><br>
@@ -38,6 +40,8 @@
   		$('#gform').prepend('Your submission has been processed...');
   		});
 		</script>
+	</div>
+		
 	
 	<div id="FacebookIcon" class="FacebookIcon">
 		<a href="https://www.facebook.com/FlappingHappy"><img src="FacebookIcon.png" alt="Facebook"></a>

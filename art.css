@@ -9,6 +9,11 @@ h1{
 	font-size: 2vw;
 	text-align: left;
 }
+div.topText{
+	display: Flex;
+	align-item: center;
+	justify-content: center;
+}
 
 div.Logo {
 	background-color: #080E12;	
@@ -16,6 +21,14 @@ div.Logo {
   	position: sticky;
   	top: 0;
 }
+
+div.contactForm {
+	display: Flex;
+	align-item: center;
+	justify-content: center;
+	min-height: 50vh;
+}
+
 .Logo img {
 	width: 25%;
    	height: auto;		
