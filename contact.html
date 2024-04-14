@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Flapping Happy contact</title>
+<title>Flapping Happy Contact</title>
 <link rel="stylesheet" href="./art.css">
 <link rel="icon" type="image/png" href="./Favicon.png">
 </head>
@@ -17,17 +17,19 @@
 		</div>
 	</div>
 	
-	<br>
-		<div id="topText" class="topText">Please fill out the following information and I will get back with you.</div>
-		<br>
+<div class="contact-me">
+		<div id="topText" class="topText">Contact Me</div>
 	<div id="contactForm" class="contactForm">
-		<form name="gform" id="gform" class="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdDhtizle99x5DLjzQ0QwbdHIv5NaXMGUEhURCWlKopHq5hHA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
- 		<br>
-		Email:<br>
-  		<input type="text" name="entry.1562853756" id="entry.1562853756"><br><br>
- 		Message:<br>
-  		<textarea style="height:20vh; width:50vh" type="text" name="entry.1858712829" id="entry.1858712829"></textarea>
-  		<input type="submit" value="Submit">
+		<form name="gform" id="gform" class="gform"  enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdDhtizle99x5DLjzQ0QwbdHIv5NaXMGUEhURCWlKopHq5hHA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+			<div class="form-items">
+  		<input type="text" class="input" placeholder="Email" name="entry.1562853756" id="entry.1562853756">
+			</div>
+			<div class="form-items">
+  		<textarea  class="input message" type="text" placeholder="Message....." name="entry.1858712829" id="entry.1858712829"></textarea>
+			</div>
+  			<button name="submit" id="submit" class="btn" type="submit" value="submit">
+			Submit
+			</button>
 		</form>
 
 		<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
@@ -37,11 +39,14 @@
 		<script type="text/javascript">
 		$('#gform').on('submit', function(e) {
   		$('#gform *').fadeOut(2000);
-  		$('#gform').prepend('Your submission has been processed...');
+		$("contactForm").css('display','none');
+  		$('#gform').prepend('Your submission has been processed...);
   		});
 		</script>
 	</div>
-		
+</div>
+	
+	
 	
 	<div id="FacebookIcon" class="FacebookIcon">
 		<a href="https://www.facebook.com/FlappingHappy"><img src="FacebookIcon.png" alt="Facebook"></a>
