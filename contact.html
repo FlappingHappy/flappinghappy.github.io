@@ -27,19 +27,19 @@
 			<div class="form-items">
   		<textarea  class="input message" type="text" placeholder="Message....." name="entry.1858712829" id="entry.1858712829"></textarea>
 			</div>
-  			<button name="submit" id="submit" class="btn" type="submit" value="submit">
+  			<button onclick="getElementById('hidden-div').style.display = 'block'; this.style.display = 'none'" name="submit" id="submit" class="btn" type="submit" value="submit">
 			Submit
 			</button>
+			<div id=hidden-div style= "display:none; color:black; font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Submission successful! <br>&nbsp;&nbsp;&nbsp;&nbsp;Thank you for contacting me!</div>
 		</form>
 
 		<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-	
+		
 		<script src="./jquery.min.js"></script>
 		<script type="text/javascript">var submitted=false;</script>
 		<script type="text/javascript">
 		$('#gform').on('submit', function(e) {
   		$('#gform *').fadeOut(2000);
-		$("contactForm").css('display','none');
   		$('#gform').prepend('Your submission has been processed...);
   		});
 		</script>

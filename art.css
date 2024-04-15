@@ -66,6 +66,11 @@ div.topText{
   margin-left: 10px;
   font-size: 12px;
 }
+
+div.hidden-div{
+	display: none;
+}
+
 .contact-me{
   width: 250px;
 	background-image: url("BGCircles.png");
