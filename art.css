@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 html {
-	scrollbar-color: #4c77b1 #e7b055;
+	scrollbar-color:  #080e12 #23282c;
 }
 body {
    	font-family: sans-serif;
@@ -13,6 +13,25 @@ h1{
 	font-size: 2vw;
 	text-align: left;
 }
+#TopCircle{
+	overflow: hidden;
+	z-index: 1;
+	 position: fixed;
+  top: -100px;
+  right: -100px;
+	width: 200px;
+   	height: auto;	
+}
+#BottomCircle{
+	overflow: hidden;
+	z-index: 99;
+	 position: fixed;
+  bottom: -100px;
+  left: -100px;
+	width: 200px;
+   	height: auto;	
+}
+
 div.topText{
 	color: #080E12;
 	font-size: 34px;
@@ -21,6 +40,15 @@ div.topText{
   margin-bottom: 25px;
   text-align: center;
 }
+div.bottomText{
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+  letter-spacing: 5px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
 .contactForm,
 .form-items{
   width: 100%;
@@ -92,20 +120,30 @@ div.Logo {
 
 
 .Logo img {
-	width: 25%;
-   	height: auto;		
+	width: 400px;
+   	height: auto;			
 }
 .Buttons img{
-	width: 10%;
+	width: 100px;
    	height: auto;	
 }
 #Buttons{
+	z-index: 99;
 	display:inline;
 }
 
 .Artwork img{
 	width: 45%;
    	height: auto;	
+}
+.Artwork{
+	width: 80%;
+	background-color: #4c77b1;	
+  padding: 50px;
+  margin: 100px auto;
+  border-radius: 30px;
+  position: flex;
+	text-align: center;
 }
 
 .FacebookIcon {
