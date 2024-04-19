@@ -138,7 +138,10 @@ div.Logo {
 }
 .Artwork{
 	width: 80%;
+	background-image: url("BGBlue.png");
 	background-color: #4c77b1;	
+	background-size: 80% auto;
+	
   padding: 50px;
   margin: 100px auto;
   border-radius: 30px;
