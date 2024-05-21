@@ -2,11 +2,14 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Flapping Happy contact</title>
+<title>Flapping Happy Shop</title>
 <link rel="stylesheet" href="./art.css">
-<link rel="icon" type="image/png" href="./Favicon.png">
+<script src="shop.js"></script>
+<link rel="icon" type="image/png" href="./Favicon.png">	
 </head>
 <body style="color: white;">
+	<img id="TopCircle" src="TopCircle.png" alt="topcircle">
+	<img id="BottomCircle" src="BottomCircle.png" alt="bottomcircle">
 	
 	<div id="Logo" class="Logo">
 		<a href="https://www.flappinghappy.com/"><img src="FlappingHappyLogo2024.png" alt="logo"></a>
@@ -16,8 +19,437 @@
 				<a href="https://www.flappinghappy.com/shop"><img src="Shop.png" onmouseover="this.src='ShopOver.png'" onmouseout="this.src='Shop.png'" alt="Shop"></a>
 		</div>
 	</div>
+	
+	<a id="top"></a>
+<div class="Shop">
+		<div><img src="ShopLogo2024.png" style="width: 500px;
+			height: auto;" alt="shop logo"></div>
+	
+	Welcome to the shop. 
 	<br>
-	<h1>Coming Soon!</h1>
+	Fill out your order below. Once submitted you will be emailed an invoice within a day. When the invoice is paid your order will be filled and shipped.
+	<br><br>
+	<div style="color: yellow; font-weight: bold;">What is an Art Number?</div>
+	To pick a custom design for Prints, stickers, and shirts you will need to find the Number labled above the design in the following table.
+	<br>
+	
+	<div id="ArtNumButtonDiv" style="display: block;">
+		<button name="ArtNumButton" id="ArtNumButton" class="btn"  value="ArtNumButton">
+			Open Art Numbers
+		</button>
+	</div>
+	
+	<div id="ArtNumbers" class="ArtNumbers" style="display: none;"> 
+		<a href="#top"><button id="topCollapseBtn" name="ArtNumbers" class="btn"  value="ArtNumbCollapse">
+			Collapse Art Numbers
+		</button></a>
+			<img src="ArtNumBG5.png" alt="artNum">
+			<img src="ArtNumBG4.png" alt="artNum">
+			<img src="ArtNumBG3.png" alt="artNum">
+			<img src="ArtNumBG2.png" alt="artNum">
+			<img src="ArtNumBG.png" alt="artNum">
+			<img src="ArtNumBG6.png" alt="artNum">
+		
+		<a href="#top"><button id="bottomCollapseBtn" name="ArtNumbers" class="btn"  value="ArtNumbCollapse">
+			Collapse
+		</button></a>
+	</div>
+	
+	<br>
+	<br>
+	
+	<div id="contactForm" class="contactForm" onkeydown="return event.key != 'Enter';">		
+			<div class="form-items">
+				
+				<b>Art Print</b>
+				<div class="formBG">
+				<hr>
+				
+				<img src="Print1.jpg" class="productImg" alt="OtterCaseCover">
+				<img src="Print2.jpg" class="productImg" alt="OtterCaseCover">
+					
+				<ul>
+					<li>5x7</li> 
+				</ul>
+				$2.00 each +shipping <div id="printAmount"></div>
+				<div id="OrderPrint" style="display: block;">
+				<button id="orderPrintBtn" name="OrderPrint" class="formBtn"  value="OrderPrint">Select Print</button>
+				</div>
+				<div id="PrintArt" style="display: none;">
+					<br>
+					<label for="pritnArtNum">Choose an art Number</label><br>
+					<select name="printArtNum" id="printArtNum" class="dropDown">
+						<option value="A001">A1</option>
+						<option value="A002">A2</option>
+						<option value="A003">A3</option>
+						<option value="A004">A4</option>
+						<option value="A005">A5</option>
+						<option value="A006">A6</option>
+						<option value="A007">A7</option>
+						<option value="A008">A8</option>
+						<option value="A009">A9</option>
+						<option value="A010">A10</option>
+						<option value="A011">A11</option>
+						<option value="A012">A12</option>
+						<option value="A013">A13</option>
+						<option value="A014">A14</option>
+						<option value="A015">A15</option>
+						<option value="A016">A16</option>
+						<option value="A017">A17</option>
+						<option value="A018">A18</option>
+						<option value="A019">A19</option>
+						<option value="A020">A20</option>
+						<option value="A021">A21</option>
+						<option value="A022">A22</option>
+						<option value="A023">A23</option>
+						<option value="A024">A24</option>
+						<option value="A025">A25</option>
+						<option value="A026">A26</option>
+						<option value="A027">A27</option>
+						<option value="A028">A28</option>
+						<option value="A029">A29</option>
+						<option value="A030">A30</option>
+						<option value="A031">A31</option>
+						<option value="A032">A32</option>
+						<option value="A033">A33</option>
+						<option value="A034">A34</option>
+						<option value="A035">A35</option>
+						<option value="A036">A36</option>
+						<option value="A037">A37</option>
+						<option value="A038">A38</option>
+						<option value="A039">A39</option>
+						<option value="A040">A40</option>
+						<option value="A041">A41</option>
+						<option value="A042">A42</option>
+						<option value="A043">A43</option>
+						<option value="A044">A44</option>
+						<option value="A045">A45</option>
+						<option value="A046">A46</option>
+						<option value="A047">A47</option>
+						<option value="A048">A48</option>
+						<option value="A049">A49</option>
+						<option value="A050">A50</option>
+						<option value="A051">A51</option>
+						<option value="A052">A52</option>
+						<option value="A053">A53</option>
+						<option value="A054">A54</option>
+						<option value="A055">A55</option>
+						<option value="A056">A56</option>
+						<option value="A057">A57</option>
+						<option value="A058">A58</option>
+						<option value="A059">A59</option>
+						<option value="A060">A60</option>
+						<option value="A061">A61</option>
+						<option value="A062">A62</option>
+						<option value="A063">A63</option>
+						
+					</select>
+					<br><br>
+					<button id="printArtBtn" name="PrintArt" class="formBtn"  value="PrintArt">Add to Cart</button>
+				</div>
+		<div id="removePrint" style="display: none;">
+			<button id="removePrintBtn" name="print" class="formBtn"  value="print">remove last print</button>
+			</div><br>
+				
+		<br><br><hr></div><br><br>
+				
+				</div>
+		
+			<div class="form-items">
+				<b>Detective Penguin - The Otter Case</b>
+				<div class="formBG">
+				<hr>
+					
+				<img src="OtterCaseCover.jpg" class="productImg" alt="OtterCaseCover">
+				<img src="OtterCaseBack.jpg" class="productImg" alt="OtterCaseCover">
+					
+				<ul>
+					<li>Childrens book</li>
+					<li>31 full color pages</li>
+				</ul>
+				$10.00 each +shipping <div id="bookAmount"></div>
+  				<button id="bookBtn" name="Book" class="formBtn"  value="Book">Add to Cart</button>
+		<div id="removeBook" style="display: none;">
+			<button id="removeBookBtn" name="Book" class="formBtn"  value="Book">remove last book</button>
+			</div><br>
+		<br><br><hr></div><br><br>
+					
+		</div>
+		
+			<div class="form-items">
+				<b>Shirt</b>
+				<div class="formBG">
+				<hr>
+					
+				<img src="Shirt1.jpg" class="productImg" alt="OtterCaseCover">
+				<img src="Shirt2.jpg" class="productImg" alt="OtterCaseCover">
+					
+				<ul>
+					<li>95% Polyester 5% Spandex</li>
+					<li>White with Sublimated Graphic</li>
+				</ul>
+				Kid - $15.00 +shipping
+				<br>
+				adult - $20.00 +shipping
+				<div id="shirtAmount"></div>
+					
+				<div id="OrderShirt" style="display: block;">
+				<button id="orderShirtBtn" name="OrderShirt" class="formBtn"  value="OrderShirt">Select Shirt</button>
+				</div>
+				<div id="ShirtArt" style="display: none;">
+					<br>
+					<label for="shirtArtNum">Choose an art Number</label><br>
+					<select name="shirtArtNum" id="shirtArtNum" class="dropDown">
+						<option value="A001">A1</option>
+						<option value="A002">A2</option>
+						<option value="A003">A3</option>
+						<option value="A004">A4</option>
+						<option value="A005">A5</option>
+						<option value="A006">A6</option>
+						<option value="A007">A7</option>
+						<option value="A008">A8</option>
+						<option value="A009">A9</option>
+						<option value="A010">A10</option>
+						<option value="A011">A11</option>
+						<option value="A012">A12</option>
+						<option value="A013">A13</option>
+						<option value="A014">A14</option>
+						<option value="A015">A15</option>
+						<option value="A016">A16</option>
+						<option value="A017">A17</option>
+						<option value="A018">A18</option>
+						<option value="A019">A19</option>
+						<option value="A020">A20</option>
+						<option value="A021">A21</option>
+						<option value="A022">A22</option>
+						<option value="A023">A23</option>
+						<option value="A024">A24</option>
+						<option value="A025">A25</option>
+						<option value="A026">A26</option>
+						<option value="A027">A27</option>
+						<option value="A028">A28</option>
+						<option value="A029">A29</option>
+						<option value="A030">A30</option>
+						<option value="A031">A31</option>
+						<option value="A032">A32</option>
+						<option value="A033">A33</option>
+						<option value="A034">A34</option>
+						<option value="A035">A35</option>
+						<option value="A036">A36</option>
+						<option value="A037">A37</option>
+						<option value="A038">A38</option>
+						<option value="A039">A39</option>
+						<option value="A040">A40</option>
+						<option value="A041">A41</option>
+						<option value="A042">A42</option>
+						<option value="A043">A43</option>
+						<option value="A044">A44</option>
+						<option value="A045">A45</option>
+						<option value="A046">A46</option>
+						<option value="A047">A47</option>
+						<option value="A048">A48</option>
+						<option value="A049">A49</option>
+						<option value="A050">A50</option>
+						<option value="A051">A51</option>
+						<option value="A052">A52</option>
+						<option value="A053">A53</option>
+						<option value="A054">A54</option>
+						<option value="A055">A55</option>
+						<option value="A056">A56</option>
+						<option value="A057">A57</option>
+						<option value="A058">A58</option>
+						<option value="A059">A59</option>
+						<option value="A060">A60</option>
+						<option value="A061">A61</option>
+						<option value="A062">A62</option>
+						<option value="A063">A63</option>
+						<option value="S001">S1</option>
+						<option value="S002">S2</option>
+						<option value="S003">S3</option>
+						<option value="S004">S4</option>
+						
+					</select>
+					<br><br>
+					<button id="shirtNextBtn" name="ShirtArt" class="formBtn"  value="ShirtArt">Next</button>
+				</div>
+				<div id="ShirtSize" style="display: none;">
+					<br>
+					<label for="size">Choose a size:</label><br>
+					<select name="size" id="shirtSize" class="dropDown">
+						<option value="2t">kid 2t</option>
+						<option value="3t">kid 3t</option>
+						<option value="4t">kid 4t</option>
+						<option value="ks">kid small</option>
+						<option value="km">kid medium</option>
+						<option value="kl">kid large</option>
+						<option value="as">adult small</option>
+						<option value="am">adult medium</option>
+						<option value="al">adult large</option>
+						<option value="xl">adult xlarge</option>
+						<option value="2x">adult 2xlarge</option>
+						<option value="3x">adult 3xlarge</option>
+					</select>
+					<br><br>
+					<button id="shirtSizeBtn" name="shirtSizeBtn" class="formBtn">Add to Cart</button>
+				</div>
+			<div id="removeAdult" style="display: none;">
+			<button id="removeAdultBtn" name="aShirt" class="formBtn"  value="aShirt">remove last Adult Shirt</button>
+			</div>
+			<div id="removeKid" style="display: none;">
+			<button id="removeKidBtn" name="kShirt" class="formBtn"  value="kShirt">remove last Kid Shirt</button>
+			</div><br>
+		
+		<br><br><hr></div><br><br>
+	</div>
+			
+			<div class="form-items">
+				
+				<b>Sticker</b>
+				<div class="formBG">
+				<hr>
+					
+				<img src="Sticker1.jpg" class="productImg" alt="OtterCaseCover">
+				<img src="Sticker2.jpg" class="productImg" alt="OtterCaseCover">
+					
+				<ul>
+					<li>Three inches</li>
+					<li>Water resistent</li>
+				</ul>
+				$1.00 +shipping <div id="stickerAmount"></div>
+				<div id="OrderSticker" style="display: block;">
+				<button id="orderStickerBtn" name="OrderSticker" class="formBtn"  value="OrderSticker">Select Sticker</button>
+				</div>
+				<div id="StickerArt" style="display: none;">
+					<br>Enter Artwork number:
+					<label for="stickerArtNum">Choose a art Number</label><br>
+					<select name="stickerArtNum" id="stickerArtNum" class="dropDown">
+						<option value="A001">A1</option>
+						<option value="A002">A2</option>
+						<option value="A003">A3</option>
+						<option value="A004">A4</option>
+						<option value="A005">A5</option>
+						<option value="A006">A6</option>
+						<option value="A007">A7</option>
+						<option value="A008">A8</option>
+						<option value="A009">A9</option>
+						<option value="A010">A10</option>
+						<option value="A011">A11</option>
+						<option value="A012">A12</option>
+						<option value="A013">A13</option>
+						<option value="A014">A14</option>
+						<option value="A015">A15</option>
+						<option value="A016">A16</option>
+						<option value="A017">A17</option>
+						<option value="A018">A18</option>
+						<option value="A019">A19</option>
+						<option value="A020">A20</option>
+						<option value="A021">A21</option>
+						<option value="A022">A22</option>
+						<option value="A023">A23</option>
+						<option value="A024">A24</option>
+						<option value="A025">A25</option>
+						<option value="A026">A26</option>
+						<option value="A027">A27</option>
+						<option value="A028">A28</option>
+						<option value="A029">A29</option>
+						<option value="A030">A30</option>
+						<option value="A031">A31</option>
+						<option value="A032">A32</option>
+						<option value="A033">A33</option>
+						<option value="A034">A34</option>
+						<option value="A035">A35</option>
+						<option value="A036">A36</option>
+						<option value="A037">A37</option>
+						<option value="A038">A38</option>
+						<option value="A039">A39</option>
+						<option value="A040">A40</option>
+						<option value="A041">A41</option>
+						<option value="A042">A42</option>
+						<option value="A043">A43</option>
+						<option value="A044">A44</option>
+						<option value="A045">A45</option>
+						<option value="A046">A46</option>
+						<option value="A047">A47</option>
+						<option value="A048">A48</option>
+						<option value="A049">A49</option>
+						<option value="A050">A50</option>
+						<option value="A051">A51</option>
+						<option value="A052">A52</option>
+						<option value="A053">A53</option>
+						<option value="A054">A54</option>
+						<option value="A055">A55</option>
+						<option value="A056">A56</option>
+						<option value="A057">A57</option>
+						<option value="A058">A58</option>
+						<option value="A059">A59</option>
+						<option value="A060">A60</option>
+						<option value="A061">A61</option>
+						<option value="A062">A62</option>
+						<option value="A063">A63</option>
+						
+					</select>
+					<br><br>
+					<button id="stickerArtBtn" name="StickerArt" class="formBtn"  value="StickerArt">Add to Cart</button>
+				</div>
+			<div id="removeSticker" style="display: none;">
+			<button id="removeStickerBtn" name="Sticker" class="formBtn"  value="Sticker">remove last Sticker</button>
+			</div><br>
+		<br><br><hr></div><br><br>
+				</div>
+		
+			<div class="form-items">
+				<b>Trading Card Pack </b>
+				<div class="formBG">
+				<hr>
+					
+					<img src="BoosterPic1.png" class="productImg" alt="boosterPic1">
+					<img src="BoosterPic2.png" class="productImg" alt="boosterPic2">
+					
+				<ul>
+					<li>5 cards</li>
+				</ul>
+				$3.00 +shipping <div id="boosterAmount"></div>
+  		<button id="boosterBtn" name="TradingCard" class="formBtn"  value="TradingCard">Add to Cart</button>
+		<div id="removeBooster" style="display: none;">
+			<button id="removeBoosterBtn" name="Booster" class="formBtn"  value="Booster">remove last pack</button>
+			</div><br>
+		
+		<br><br><hr></div><br><br>
+		</div>
+		
+			<form name="gform" id="gform" class="gform" onkeydown="return event.key != 'Enter';" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeGocZ3sh8-PMqHbyk8mn9IoRcaGu8BVSEYbRItA1VBvyBWhw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+			<div class="form-items">
+			<div style="color: yellow; font-weight: bold; text-align: left;">Please enter your email to receive the invoice.</div>
+			<input type="text" class="input" placeholder="Email" name="entry.1808058504" id="entry.1808058504">
+				<div style="color: yellow; font-weight: bold; text-align: left;">Please enter your mailing address for shipping.</div>
+				address, address line 2, city, state, zip code
+			<input type="text" class="input" placeholder="Mailing Address" name="entry.1608780800" id="entry.1608780800">
+  			<input  style="display: none;" type="text" class="input" placeholder="Order" name="entry.579895398" id="entry.579895398">
+			</div>
+  			<button name="submit" id="submit" class="btn" type="submit" value="submit">
+			Submit Order
+			</button>
+			<div id="hidden-div" style= "display:none; color:black; font-weight: bold; text-align: center;">
+				Submission successful!
+				<br>
+				Thank you for Shopping with us!
+			</div> 
+		</form>
+
+		<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+		
+	</div>
+</div>
+	
+	<div id="shopCartSecondBoarder" class="shopCartSecondBoarder">
+		<div id="CartContent2"></div>
+		<div id="Cart2"></div>
+	<div id="shopCart" class="shopCart">
+		<div id="CartContent"></div>
+		<div id="Cart"></div>
+	</div>
+		</div>
+	
 	
 	<div id="FacebookIcon" class="FacebookIcon">
 		<a href="https://www.facebook.com/FlappingHappy"><img src="FacebookIcon.png" alt="Facebook"></a>
@@ -33,4 +465,5 @@
 	
 </body>
 </html>
+
 

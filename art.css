@@ -1,14 +1,19 @@
 @charset "utf-8";
 /* CSS Document */
+@font-face { font-family: rubik; src: url('Rubik.ttf');}
+
+
 html {
 	scrollbar-color:  #080e12 #23282c;
 }
 body {
-   	font-family: sans-serif;
+   	font-family: rubik;
     background-color: #080E12;
 	background-image: url("TriangleBG.png");
-	width: 99%;
+	width: 100%;
+	overflow-x: hidden;
 }
+
 h1{
 	font-size: 2vw;
 	text-align: left;
@@ -49,9 +54,28 @@ div.bottomText{
   text-align: center;
 }
 
+div.ArtNumbers{
+	background-color: rgba(0,0,0,0.10);
+	border-radius: 30px;
+	width: 100%;
+	position: flex;
+}
+
+
+
+.ArtNumbers img {
+	width: 500px;
+   	height: auto;	
+}
+
+.formBG{
+	background-color: rgba(0,0,0,0.10);
+}
+
 .contactForm,
 .form-items{
   width: 100%;
+	text-align: left;
 }
 .form-items .input{
   width: 100%;
@@ -62,6 +86,7 @@ div.bottomText{
   border: 0px;
   outline: none;
   border-radius: 30px;
+	
 }
 .form-items .input.message{
   height: 125px;
@@ -73,13 +98,8 @@ div.bottomText{
 .form-items{
   position: flex;
 }
-.form-items .fas{
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  color: #9a99aa;
-}
 .btn{
+	font-family: rubik;
 	width: 100%;
 	font-weight: bold;
   background: #e7b055;
@@ -89,11 +109,27 @@ div.bottomText{
   border-radius: 25px;
   cursor: pointer;
 }
-
-.btn .fas{
-  margin-left: 10px;
-  font-size: 12px;
+.formBtn{
+	font-family: rubik;
+	width: 25%;
+	float: left;
+	font-weight: bold;
+  background: #e7b055;
+  text-align: center;
+  color: #080E12;
+  padding: 12px;
+  border-radius: 25px;
+  cursor: pointer;
 }
+
+.dropDown{
+	width: 25%;
+	float: left;
+	font-weight: bold;
+	padding: 5px;
+  	border-radius: 25px;
+}
+
 
 div.hidden-div{
 	display: none;
@@ -108,6 +144,18 @@ div.hidden-div{
   margin: 100px auto;
   border-radius: 30px;
   position: flex;
+}
+
+.Shop{
+  width: 80%;
+	background-image: url("BGBlue.png");
+	background-color: #4c77b1;	
+	background-size: 80% auto;
+  padding: 50px;
+  margin: 100px auto;
+  border-radius: 30px;
+  position: flex;
+	text-align: center;
 }
 
 div.Logo {
@@ -147,6 +195,42 @@ div.Logo {
   border-radius: 30px;
   position: flex;
 	text-align: center;
+}
+
+.productImg{
+	width: 100px; 
+	height: auto;
+}
+.productImg:focus{
+	width: 300px; 
+	height: auto;
+}
+.productImg:active{
+	width: 300px; 
+	height: auto;
+}
+
+.shopCart {
+	background-color: #4c77b1;	
+	border: 5px solid #e7b055;
+	padding: 20px;
+  	border-radius: 30px;
+	position: fixed;
+	left: 105px;
+	bottom: 20px;
+   	height: 5vh;
+	text-align: left;
+}
+.shopCartSecondBoarder{
+	background-color: white;	
+	border: 9px solid white;
+	padding: 20px;
+  	border-radius: 30px;
+	position: fixed;
+	left: 101px;
+	bottom: 16px;
+   	height: 5vh;
+	text-align: left;
 }
 
 .FacebookIcon {
