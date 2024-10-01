@@ -6,15 +6,16 @@ function display()
 {
 	var order = "";
 	var book = 0;
+	var DP02 = 0;
 	var	kShirt = 0;
 	var	aShirt = 0; 
 	var	sticker = 0; 
 	var	print = 0;
 	var	booster = 0;
-	var cartContent = book + kShirt + aShirt + sticker + print + booster;
+	var cartContent = book + DP02 + kShirt + aShirt + sticker + print + booster;
 	var cartTotal = 0;
 	
-	cartContent = book + kShirt + aShirt + sticker + print + booster;
+	cartContent = book + DP02 + kShirt + aShirt + sticker + print + booster;
 	document.getElementById('Cart').innerHTML="Total: $" + cartTotal + " +shipping";
 	document.getElementById('CartContent').innerHTML="Items in cart: " +cartContent;
 	document.getElementById('Cart2').innerHTML="Total: $" + cartTotal + " +shipping";
@@ -23,11 +24,12 @@ function display()
 	document.getElementById('stickerAmount').innerHTML="stickers in cart: " +sticker;
 	document.getElementById('shirtAmount').innerHTML="shirts in cart: " +(kShirt + aShirt);
 	document.getElementById('bookAmount').innerHTML="books in cart: " +book;
+	document.getElementById('DP02Amount').innerHTML="books in cart: " +DP02;
 	document.getElementById('printAmount').innerHTML="prints in cart: " +print;
 	
 	function displayUpdate()
 	{
-	cartContent = book + kShirt + aShirt + sticker + print + booster;
+	cartContent = book + DP02 + kShirt + aShirt + sticker + print + booster;
 	document.getElementById('Cart').innerHTML="Total: $" + cartTotal + " +shipping";
 	document.getElementById('CartContent').innerHTML="Items in cart: " +cartContent;
 	document.getElementById('Cart2').innerHTML="Total: $" + cartTotal + " +shipping";
@@ -36,6 +38,7 @@ function display()
 	document.getElementById('stickerAmount').innerHTML="stickers in cart: " +sticker;
 	document.getElementById('shirtAmount').innerHTML="shirts in cart: " +(kShirt + aShirt);
 	document.getElementById('bookAmount').innerHTML="books in cart: " +book;
+	document.getElementById('DP02Amount').innerHTML="books in cart: " +DP02;
 	document.getElementById('printAmount').innerHTML="prints in cart: " +print;
 	}
 	
@@ -109,6 +112,30 @@ function display()
 			document.getElementById('removeBook').style.display = 'none';
 		}
 	}document.getElementById("removeBookBtn").onclick = removeBookBtn;
+	
+	function DP02Btn()
+	{
+		document.getElementById('removeDP02').style.display = 'block';
+		DP02++; 
+		cartTotal += 10; 
+		order =' DP02;' + order; 
+		displayUpdate();
+	}document.getElementById("DP02Btn").onclick = DP02Btn;
+	
+	function removeDP02Btn()
+	{
+		if(DP02>=1)
+		{
+			DP02--; 
+			cartTotal -= 10; 
+			order = order.replace(' DP02;', ''); 
+			displayUpdate();
+		} 
+		if(DP02<=0)
+		{
+			document.getElementById('removeDP02').style.display = 'none';
+		}
+	}document.getElementById("removeDP02Btn").onclick = removeDP02Btn;
 	
 	function orderShirtBtn()
 	{
