@@ -13,6 +13,45 @@ body {
    	height: auto;		
 }
 
+.menuBtn{
+	font-family: rubik;
+	margin: 5px;
+	position: relative;
+	left: 15px;
+	width: 150px;
+	font-weight: bold;
+  background: #e7b055;
+	background-image: url("BlueStripesBG.png");
+	background-position: left;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 
+		-2px -1px #000, 
+		-2px -2px #000,
+		0px -1px #000, 
+		0px -2px #000,
+		2px -1px #000, 
+		2px -2px #000, 
+		2px 0px #000,
+		2px 1px #000,
+		2px 2px #000,
+		0px 1px #000,
+		0px 2px #000,
+		-2px 1px #000,
+		-2px 2px #000,
+		-2px 0px #000;		
+  color: #fff;
+  padding: 12px;
+  border-radius: 25px;
+	border-width: 0px;
+	border-color: #000;
+  cursor: pointer;
+}
+.menuBtn:hover {
+	background-image: url("YellowStripesBG.png");
+	background-position: left;
+}
+
 .Art {
 	display: flex;
 	margin: auto;
