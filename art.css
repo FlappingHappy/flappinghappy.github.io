@@ -103,7 +103,7 @@ div.ArtNumbers{
 	width: 100%;
 	font-weight: bold;
   background: #e7b055;
-	background-image: url("YellowStripesBG.png");
+	background-image: linear-gradient(to right, #e7b05500, #ad7a2680), url("YellowStripesBG2.png");
 	background-repeat: no-repeat;
   text-align: center;
 	letter-spacing: 2px;
@@ -134,7 +134,7 @@ div.ArtNumbers{
 	float: left;
 	font-weight: bold;
   background: #e7b055;
-	background-image: url("YellowStripesBG.png");
+	background-image: linear-gradient(to right, #e7b05500, #ad7a2680), url("YellowStripesBG2.png");
 	background-repeat: no-repeat;
 	background-position: left;
   text-align: center;
@@ -167,7 +167,7 @@ div.ArtNumbers{
 	width: 150px;
 	font-weight: bold;
   background: #e7b055;
-	background-image: url("BlueStripesBG.png");
+	background-image: linear-gradient(to right, #00080E12, #16345d80), url("BlueStripesBG.png");
 	background-position: left;
   text-align: center;
   letter-spacing: 2px;
@@ -194,7 +194,7 @@ div.ArtNumbers{
   cursor: pointer;
 }
 .menuBtn:hover {
-	background-image: url("YellowStripesBG.png");
+	background-image: linear-gradient(to right, #e7b05500, #ad7a2680), url("YellowStripesBG2.png");
 	background-position: left;
 }
 
@@ -224,9 +224,7 @@ div.hidden-div{
 
 .Shop{
   width: 80%;
-	background-image: url("BGBlue.png");
-	background-color: #4c77b1;	
-	background-size: 80% auto;
+	background-image: linear-gradient(to right, #00080E12, #16345db3), url("BGBlue.png");	
   padding: 50px;
   margin: 100px auto;
   border-radius: 30px;
@@ -264,9 +262,8 @@ div.Logo {
 }
 .Artwork{
 	width: 80%;
-	background-image: url("BGBlue.png");
+	background-image: linear-gradient(to right, #00080E12, #16345db3), url("BGBlue.png");
 	background-color: #4c77b1;	
-	background-size: 80% auto;
 	
   padding: 50px;
   margin: 100px auto;
@@ -290,6 +287,7 @@ div.Logo {
 
 .shopCart {
 	background-color: #4c77b1;	
+	background-image: linear-gradient(to right, #00080E12, #16345db3), url("BlueStripesBG.png");
 	border: 5px solid #e7b055;
 	padding: 20px;
   	border-radius: 30px;
