@@ -16,8 +16,6 @@ body {
 .menuBtn{
 	font-family: rubik;
 	margin: 5px;
-	position: relative;
-	left: 15px;
 	width: 150px;
 	font-weight: bold;
   background: #e7b055;
@@ -54,6 +52,8 @@ body {
 
 .Art {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin: auto;
 	width: 35%;
 	
