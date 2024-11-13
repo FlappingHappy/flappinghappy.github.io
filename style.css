@@ -19,7 +19,7 @@ body {
 	width: 150px;
 	font-weight: bold;
   background: #e7b055;
-	background-image: url("BlueStripesBG.png");
+	background-image: linear-gradient(to right, #00080E12, #16345db3), url("BlueStripesBG.png");
 	background-position: left;
   text-align: center;
   letter-spacing: 2px;
@@ -46,7 +46,7 @@ body {
   cursor: pointer;
 }
 .menuBtn:hover {
-	background-image: url("YellowStripesBG2.png");
+	background-image: linear-gradient(to right, #e7b05500, #ad7a2680), url("YellowStripesBG2.png");
 	background-position: left;
 }
 
