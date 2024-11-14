@@ -18,6 +18,11 @@ h1{
 	font-size: 2vw;
 	text-align: left;
 }
+
+hr {
+	border-color: #4c77b1;
+}
+
 #TopCircle{
 	overflow: hidden;
 	z-index: 1;
@@ -70,6 +75,7 @@ div.ArtNumbers{
 
 .formBG{
 	background-color: rgba(0,0,0,0.10);
+	background-image: linear-gradient(to right, #00080E12, #16345d80), url("BlueStripesBG.png");
 }
 
 .contactForm,
@@ -126,6 +132,7 @@ div.ArtNumbers{
   padding: 12px;
   border-radius: 25px;
 	border-width: 3px;
+	border-color: #000;
   cursor: pointer;
 }
 .formBtn{
@@ -158,6 +165,7 @@ div.ArtNumbers{
   padding: 12px;
   border-radius: 25px;
 	border-width: 3px;
+	border-color: #000;
   cursor: pointer;
 }
 .menuBtn{
@@ -309,35 +317,12 @@ div.Logo {
 	text-align: left;
 }
 
-.FacebookIcon {
-	position: fixed;
-	right: 105px;
+.socialIcons {
+  	position: fixed;
 	bottom: 20px;
-   	height: 5vh;	
+	right: -340px;
 }
-.FacebookIcon img {
-	width: 30%;
-   	height: auto;		
-}
-
-.TwitXIcon {	
-	position: fixed;
-	right: 55px;
-	bottom: 20px;
-	height: 5vh;	
-}
-.TwitXIcon img {
-	width: 30%;
-   	height: auto;		
-}
-
-.InstaIcon {
-	position: fixed;
-	right: 5px;
-	bottom: 20px;
-   	height: 5vh;	
-}
-.InstaIcon img {
-	width: 30%;
-   	height: auto;		
+.socialIcons img{
+	width: 8%;
+   	height: auto;	
 }

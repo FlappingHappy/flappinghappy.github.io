@@ -64,36 +64,12 @@ body {
 	width: 100%;
    	height: auto;	
 }
-
-.FacebookIcon {
-	position: absolute;
-	right: 105px;
+.socialIcons {
+  	position: fixed;
 	bottom: 20px;
-   	height: 5vh;	
+	right: -345px;
 }
-.FacebookIcon img {
-	width: 30%;
-   	height: auto;		
-}
-
-.TwitXIcon {	
-	position: absolute;
-	right: 55px;
-	bottom: 20px;
-	height: 5vh;	
-}
-.TwitXIcon img {
-	width: 30%;
-   	height: auto;		
-}
-
-.InstaIcon {
-	position: absolute;
-	right: 5px;
-	bottom: 20px;
-   	height: 5vh;	
-}
-.InstaIcon img {
-	width: 30%;
-   	height: auto;		
+.socialIcons img{
+	width: 8%;
+   	height: auto;	
 }
