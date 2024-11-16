@@ -34,16 +34,7 @@
 		<div id="topText" class="topText">Contact Me</div>
 	<div id="contactForm" class="contactForm">
 		<form name="gform" id="gform" class="gform"  enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdDhtizle99x5DLjzQ0QwbdHIv5NaXMGUEhURCWlKopHq5hHA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-			<div class="form-items">
-				<input  style="display: none;" type="text" class="input" placeholder="Email" name="emailcheck" id="emailcheck">
-				
-<script>
-  const textField = document.getElementById("emailcheck");
-	textField.addEventListener("focus", function() {
-		location.reload();
-	});
-</script>
-				
+			<div class="form-items">	
   			<input type="text" class="input" placeholder="Email" name="entry.1562853756" id="entry.1562853756">
 			</div>
 			<div class="form-items">
@@ -57,14 +48,7 @@
 
 		<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 		
-		<script src="./jquery.min.js"></script>
-		<script type="text/javascript">var submitted=false;</script>
-		<script type="text/javascript">
-		$('#gform').on('submit', function(e) {
-  		$('#gform *').fadeOut(2000);
-  		$('#gform').prepend('Your submission has been processed...);
-  		});
-		</script>
+		
 	</div>
 </div>
 	
