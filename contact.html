@@ -13,6 +13,7 @@
 	
 	<div id="Logo" class="Logo">
 		<a href="https://www.flappinghappy.com/"><img src="FlappingHappyLogo2024.png" alt="logo"></a>
+		
 		<div id="Buttons" class="Buttons">
 				<a href="https://www.flappinghappy.com/art"><button name="artButton" id="artButton" class="menuBtn"  value="artButton">
 					Art
@@ -34,12 +35,21 @@
 	<div id="contactForm" class="contactForm">
 		<form name="gform" id="gform" class="gform"  enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdDhtizle99x5DLjzQ0QwbdHIv5NaXMGUEhURCWlKopHq5hHA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
 			<div class="form-items">
-  		<input type="text" class="input" placeholder="Email" name="entry.1562853756" id="entry.1562853756">
+				<input  style="display: none;" type="text" class="input" placeholder="Email" name="emailcheck" id="emailcheck">
+				
+<script>
+  const textField = document.getElementById("emailcheck");
+	textField.addEventListener("focus", function() {
+		location.reload();
+	});
+</script>
+				
+  			<input type="text" class="input" placeholder="Email" name="entry.1562853756" id="entry.1562853756">
 			</div>
 			<div class="form-items">
   		<textarea  class="input message" type="text" placeholder="Message....." name="entry.1858712829" id="entry.1858712829"></textarea>
 			</div>
-  			<button onclick="getElementById('hidden-div').style.display = 'block'; this.style.display = 'none'" name="submit" id="submit" class="btn" type="submit" value="submit">
+			<button onclick="getElementById('hidden-div').style.display = 'block'; this.style.display = 'none'" name="submit" id="submit" class="btn" type="submit" value="submit">
 			Submit
 			</button>
 			<div id="hidden-div" style= "display:none; color:black; font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Submission successful! <br>&nbsp;&nbsp;&nbsp;&nbsp;Thank you for contacting me!</div>
